@@ -40,7 +40,7 @@ export async function POST(req: Request) {
   }));
 
   const result = streamText({
-    model: "anthropic/claude-haiku-5-5",
+    model: "anthropic/claude-haiku-5.5",
     instructions: INSTRUCTIONS,
     messages: await convertToModelMessages(trimmed),
     maxOutputTokens: 350,
