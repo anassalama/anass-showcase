@@ -14,6 +14,12 @@ const demos = [
     text: "A storefront with product variants, a slide-out cart, quantity updates, totals and a validated checkout form - the same flows I fix on WooCommerce stores.",
   },
   {
+    href: "/demos/advisory",
+    tag: "Bilingual · English / Arabic RTL",
+    title: "Meridian Advisory",
+    text: "A premium lead-magnet landing page with a one-click English/Arabic switch: full right-to-left layout, Arabic typography and a validated opt-in form.",
+  },
+  {
     href: "/demos/assistant",
     tag: "AI integration · Arabic / English",
     title: "Riad Concierge",
@@ -92,7 +98,7 @@ export default function Home() {
       <section id="demos" className="mt-20">
         <h2 className="font-serif text-3xl">Live demos</h2>
         <p className="mt-2 text-stone-600">Click through them - they work.</p>
-        <div className="mt-8 grid gap-6 md:grid-cols-3">
+        <div className="mt-8 grid gap-6 md:grid-cols-2">
           {demos.map((d) => (
             <Link
               key={d.href}
